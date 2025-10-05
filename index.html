@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Página estructurada con capas</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Cabecera */
+    header {
+      background-color: rgb(178, 171, 206);
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Contenedor central */
+    #contenido {
+      display: flex;
+    }
+
+    /* Columna izquierda */
+    #izquierda {
+      background-color: rgb(145, 224, 145);
+      width: 50%;
+      padding: 20px;
+    }
+
+    /* Columna derecha */
+    #derecha {
+      background-color: lightcoral;
+      width: 50%;
+      padding: 20px;
+    }
+
+    /* Pie de página */
+    footer {
+      background-color: lightgray;
+      text-align: center;
+      padding: 15px;
+    }
+
+    /* Lista de colores */
+    li {
+      font-size: 18px;
+      list-style: none;
+    }
+
+    .rojo { color: red; }
+    .azul { color: blue; }
+    .verde { color: green; }
+    .amarillo { color: gold; }
+    .morado { color: purple; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Página estructurada con capas</h1>
+  </header>
+
+  <div id="contenido">
+    <div id="izquierda">
+      <h2>Lista de Colores</h2>
+      <ul>
+        <li class="rojo">Rojo</li>
+        <li class="azul">Azul</li>
+        <li class="verde">Verde</li>
+        <li class="amarillo">Amarillo</li>
+        <li class="morado">Morado</li>
+      </ul>
+    </div>
+
+    <div id="derecha">
+      <h2 style="text-align: center;">Contenido adicional</h2>
+
+      <p style="text-align: left;">¿Sabías que los colores pueden influir en cómo nos sentimos?</p>
+      <!--Texto alineado a la izquierda-->
+      <ul style="text-align: left;">
+        <li><strong>Rojo:</strong> transmite energía y pasión.</li>
+        <li><strong>Azul:</strong> da sensación de calma y confianza.</li>
+        <li><strong>Verde:</strong> representa la naturaleza y la armonía.</li>
+        <li><strong>Amarillo:</strong> es alegre y lleno de luz.</li>
+        <li><strong>Morado:</strong> se asocia con la creatividad.</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    Pie de página
+  </footer>
+
+</body>
+</html>
